@@ -7,8 +7,8 @@ A starting place for creating libraries in TypeScript
 First Create your repository on Github, then from your command line
  
 ```shell
-$ khaos install TylorS/khaos-typescript-library
-$ hhaos create typescript-library package-name
+$ khaos install TylorS/ts-lib
+$ hhaos create ts-lib package-name
 $ cd awesome-package-name
 $ npm start
 $ git init
