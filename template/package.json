@@ -34,7 +34,7 @@
     "prepublish": "npm run lib",
     "preversion": "npm test",
     "version": "npm run dist && git add -A",
-    "postversion": "git checkout master && git push origin master && git push origin --tags && npm publish && git checkout develop",
+    "postversion": "git checkout master && git merge develop --no-ff && git push origin master && git push origin --tags && npm publish && git checkout develop",
     "release-patch": "npm version patch -m 'chore(package): release new version'",
     "release-minor": "npm version minor -m 'chore(package): release new version'",
     "release-major": "npm version major -m 'chore(package): release new verison'"
