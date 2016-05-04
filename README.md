@@ -2,6 +2,18 @@
 
 A starting place for creating libraries in TypeScript
 
+## Features
+  - Mocha and power-assert for testing
+  - Code coverage
+  - TypeScript
+  - Documentation Generation
+  - Scripted versioning and releases
+  
+## Design
+
+This starter is designed to be worked on from the `develop` branch, so you
+can setup automatic deployments via TravisCI when pushing to the master branch.
+
 ## Usage
 
 First Create your repository on Github, then from your command line
