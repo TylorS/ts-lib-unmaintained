@@ -8,6 +8,7 @@ A starting place for creating libraries in TypeScript
   - TypeScript
   - Documentation Generation
   - Scripted versioning and releases
+  - Automatically updates Github Issue labels to be more useful :)
   
 ## Design
 
