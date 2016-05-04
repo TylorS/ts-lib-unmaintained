@@ -9,19 +9,15 @@ git checkout -b develop
 git push origin --all
 git push origin --tags
 
-bash ./add_repo_labels.sh
 
-echo -n "Github Username: "
-read USER
+USER={{GITHUB_USERNAME}}
 
-echo -n "Password: "
+echo -n "Github Password: "
 read PASS
 
-echo -n "Repo (e.g. cyclejs/core); "
-read REPO
 
-REPO_USER=$(echo "$REPO" | cut -f1 -d /)
-REPO_NAME=$(echo "$REPO" | cut -f2 -d /)
+REPO_USER={{GITHUB_USERNAME}}
+REPO_NAME={{package_name}}
 
 # Delete default labelsf
 curl -u "$USER:$PASS" -i -X DELETE "https://api.github.com/repos/$REPO_USER/$REPO_NAME/labels/bug"
