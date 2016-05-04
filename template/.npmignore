@@ -1,0 +1,9 @@
+src/
+tools/
+test/
+typings/
+.local/
+.vscode/
+.idea/
+*.log
+npm-debug.log*
