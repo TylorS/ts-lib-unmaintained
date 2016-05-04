@@ -12,7 +12,7 @@ $ hhaos create ts-lib package-name
 $ cd awesome-package-name
 $ npm start
 $ git init
-$ git remote add https://github.com/username/package-name
+$ git remote add origin https://github.com/username/package-name
 $ bash ./tools/finish_setup.sh
 $ rm -rf ./tools
 ```

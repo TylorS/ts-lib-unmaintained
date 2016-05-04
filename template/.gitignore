@@ -43,6 +43,7 @@ typings/
 
 # Misc
 .ignore/
+tools/
 
 # Editors
 .idea/
