@@ -1,3 +1,7 @@
+npm start
+node ./node_modules/.bin/commitizen init cz-conventional-changelog
+git init
+git remote add origin https://github.com/{{GITHUB_USERNAME}}/{{package_name}}
 git add -A
 npm run commit
 git tag -f v0.0.0
