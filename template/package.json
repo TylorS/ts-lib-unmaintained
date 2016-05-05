@@ -17,7 +17,6 @@
   "scripts": {
     "commit": "git-cz",
     "changelog": "conventional-changelog --infile CHANGELOG.md --same-file --release-count 0 --preset angular",
-    "postchangelog": "git add CHANGELOG.md && git commit chore(CHANGELOG): update CHANGELOG",
     "docs": "typedoc -m commonjs -t ES5 --excludeNotExported --out docs/ src/index.ts",
     "coverage": "./node_modules/.bin/isparta cover ./node_modules/.bin/_mocha -- -r ts-node/register test/index.ts",
     "lint": "tslint -c tslint.json src/*.ts src/**/*.ts",
@@ -34,11 +33,11 @@
     "start": "npm install && npm prune",
     "prepublish": "npm run lib",
     "preversion": "npm test",
-    "version": "npm run dist && git add -A",
-    "postversion": "git checkout master && git merge develop --no-ff && npm run changelog && git push origin master && git push origin --tags && npm publish && git checkout develop",
-    "release-patch": "npm version patch -m 'chore(package): release new version'",
-    "release-minor": "npm version minor -m 'chore(package): release new version'",
-    "release-major": "npm version major -m 'chore(package): release new verison'"
+    "version": "npm run dist && npm run changelog && git add -A",
+    "postversion": "git checkout master && git merge develop --no-ff && git push origin master && git push origin --tags && git checkout develop",
+    "release-patch": "npm version patch -m 'chore(release): release new patch version'",
+    "release-minor": "npm version minor -m 'chore(release): release new minor version'",
+    "release-major": "npm version major -m 'chore(release): release new major verison'"
   },
   "publishConfig": {
     "access": "public"
