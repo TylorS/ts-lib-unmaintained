@@ -21,7 +21,7 @@ First Create your repository on Github, then from your command line
  
 ```shell
 $ khaos install TylorS/ts-lib
-$ hhaos create ts-lib package-name
+$ khaos create ts-lib package-name
 $ cd awesome-package-name
 $ bash ./tools/finish_setup.sh
 $ rm -rf ./tools
